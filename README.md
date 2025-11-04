@@ -4,7 +4,6 @@ Version: 6.8 (Node 20 + TypeScript + SQLite)
 Purpose: DexHub is a local “AI OS” backend designed for durable memory, reasoning, and synthesis.
 It captures and relates user knowledge in a graph of memory documents and dialectical edges — forming the substrate for a symbolic reasoning engine.
 
-Core Stack
 
 Core Stack
 
