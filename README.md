@@ -21,7 +21,7 @@ API routes	/api/memory, /api/edges, /api/graph, /api/dialectic, /api/system	CRUD
 Scripts	migrate, seed, verify, smoke	Local dev / health / data bootstrap
 
 
-Prerequisites
+##Prerequisites
 
 Node.js v20+
 
@@ -31,13 +31,13 @@ SQLite (preinstalled on most systems)
 
 
 
-Clone & Install
+##Clone & Install
 
 git clone https://github.com/yourusername/dexhub.git
 cd dexhub
 npm install
 
-Environment Setup
+##Environment Setup
 
 Create a .env.local file in the project root:
 PORT=5555
@@ -45,7 +45,7 @@ SQLITE_PATH=server/data/dexhub.sqlite
 EMBEDDING_MODE=hash
 (You can change EMBEDDING_MODE to off if embeddings are disabled.)
 
-Database Migration
+##Database Migration
 
 Create tables and FTS indices:
 npm run migrate
@@ -53,11 +53,11 @@ npm run migrate
 (Optional) Seed with Example Data
 npm run seed
 
-Run the Server
+##Run the Server
 npm run dev
 → Visit http://localhost:5555
 
-Verify Setup
+##Verify Setup
 
 Quick health check:
 
