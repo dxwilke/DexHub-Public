@@ -6,6 +6,7 @@ It captures and relates user knowledge in a graph of memory documents and dialec
 
 Core Stack
 
+🧩 Core Stack
 Layer	Tech	Purpose
 Runtime	Node 20 + Express + Zod	ESM TypeScript backend with runtime validation
 Database	SQLite (better-sqlite3)	Durable local store for docs + edges + chat history
@@ -13,6 +14,7 @@ Schema	/schema.sql + idempotent migrations	docs, edges, chats, messages, message
 Search	SQLite FTS5 (memory_fts)	Full-text semantic lookup across memory
 API routes	/api/memory, /api/edges, /api/graph, /api/dialectic, /api/system	CRUD + graph analytics
 Scripts	migrate, seed, verify, smoke	Local dev / health / data bootstrap
+
 
 2. Clone & Install
 git clone https://github.com/yourusername/dexhub.git
