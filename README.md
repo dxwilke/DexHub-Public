@@ -9,12 +9,25 @@ Core Stack
 🧩 Core Stack
 Layer	Tech	Purpose
 Runtime	Node 20 + Express + Zod	ESM TypeScript backend with runtime validation
+
 Database	SQLite (better-sqlite3)	Durable local store for docs + edges + chat history
+
 Schema	/schema.sql + idempotent migrations	docs, edges, chats, messages, message_docs, memory_fts
+
 Search	SQLite FTS5 (memory_fts)	Full-text semantic lookup across memory
+
 API routes	/api/memory, /api/edges, /api/graph, /api/dialectic, /api/system	CRUD + graph analytics
+
 Scripts	migrate, seed, verify, smoke	Local dev / health / data bootstrap
 
+
+1. Prerequisites
+
+Node.js v20+
+
+npm (or pnpm/yarn)
+
+SQLite (preinstalled on most systems)
 
 2. Clone & Install
 git clone https://github.com/yourusername/dexhub.git
