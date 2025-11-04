@@ -30,18 +30,22 @@ npm (or pnpm/yarn)
 SQLite (preinstalled on most systems)
 
 
-
 ## Clone & Install
 
 git clone https://github.com/yourusername/dexhub.git
+
 cd dexhub
+
 npm install
 
 ## Environment Setup
 
 Create a .env.local file in the project root:
+
 PORT=5555
+
 SQLITE_PATH=server/data/dexhub.sqlite
+
 EMBEDDING_MODE=hash
 (You can change EMBEDDING_MODE to off if embeddings are disabled.)
 
