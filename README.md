@@ -6,7 +6,8 @@ It captures and relates user knowledge in a graph of memory documents and dialec
 
 Core Stack
 
-🧩 Core Stack
+Core Stack
+
 Layer	Tech	Purpose
 Runtime	Node 20 + Express + Zod	ESM TypeScript backend with runtime validation
 
@@ -21,7 +22,7 @@ API routes	/api/memory, /api/edges, /api/graph, /api/dialectic, /api/system	CRUD
 Scripts	migrate, seed, verify, smoke	Local dev / health / data bootstrap
 
 
-1. Prerequisites
+Prerequisites
 
 Node.js v20+
 
