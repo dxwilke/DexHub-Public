@@ -14,32 +14,41 @@ Search	SQLite FTS5 (memory_fts)	Full-text semantic lookup across memory
 API routes	/api/memory, /api/edges, /api/graph, /api/dialectic, /api/system	CRUD + graph analytics
 Scripts	migrate, seed, verify, smoke	Local dev / health / data bootstrap
 
-How to Run DexHub (Local Dev)
-1. Prerequisites
-Node.js v20+
-npm (or pnpm/yarn)
-SQLite (preinstalled on most systems)
-
-3. Clone & Install
+2. Clone & Install
 git clone https://github.com/yourusername/dexhub.git
 cd dexhub
 npm install
-4. Environment Setup
+
+3. Environment Setup
+
 Create a .env.local file in the project root:
+
 PORT=5555
 SQLITE_PATH=server/data/dexhub.sqlite
 EMBEDDING_MODE=hash
+
+
 (You can change EMBEDDING_MODE to off if embeddings are disabled.)
+
 4. Database Migration
+
 Create tables and FTS indices:
+
 npm run migrate
+
 5. (Optional) Seed with Example Data
 npm run seed
+
 6. Run the Server
 npm run dev
+
+
 → Visit http://localhost:5555
+
 7. Verify Setup
+
 Quick health check:
+
 npm run verify
 
 
@@ -140,18 +149,29 @@ The symbolic layer treats nodes and edges as explicit semantic atoms, enabling r
 
 Function	Role
 Symbolic Representation	Each doc = a proposition; edges = semantic relations (logical / dialectical).
+
 Concept Synthesis	New symbols emerge via DRE syntheses → recorded as higher-order nodes.
+
 Energy-like Flow	Belief and tension behave like energy potentials guiding synthesis.
+
 JEPA-inspired Predictive State	Each synthesis approximates the “next best concept” — a predictive world-model snapshot.
+
 Non-Markov History	Context carries forward: older contradictions still echo in reasoning paths.
 
 Together, these form DexHub’s Dialectical Memory Engine (DME) — a bridge between symbolic logic and emergent, energy-based reasoning.
 
 Next-Phase Roadmap (summary)
+
 Search Route: FTS-first / semantic hybrid query endpoint.
+
 Graph Views: Community / path / richness analytics.
+
 Synthesis Logs: Track evolving concept states over time.
+
 Auth: Optional API-key or local-session security.
+
 OpenAPI Docs for full self-describing API.
+
 Local LLM Module: integrate Llama-compatible runtime for in-graph reasoning.
+
 UI Dashboard: Memory web, tension heatmap, synthesis timeline.
